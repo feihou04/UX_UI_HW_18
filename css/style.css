@@ -17,7 +17,7 @@ body {
 
 #logo {
   padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .logo p {
   float: right;
@@ -27,7 +27,7 @@ body {
   list-style: none;
   display: flex;
 }
-.listitem {
+.listitem, .listitemportfolio {
   padding-right: 80px;
   
   flex: auto;
@@ -45,8 +45,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.title h4,
-.title h2 {
+.title h2,
+.title h1 {
   text-align: center;
   margin: 0px;
 }
@@ -66,7 +66,7 @@ body {
   padding-bottom: 25px;
   display: grid;
 
-  grid-template-columns: 1fr  3fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 60px 60px;
   grid-template-areas:
     "icon email"
@@ -78,7 +78,7 @@ body {
 }
 #icon1 {
   grid-area: icon;
-  padding-right: 27px;
+  padding-right: 25px;
 }
 .email {
   grid-area: email;
@@ -104,6 +104,7 @@ body {
 
 #linicon {
   grid-area: linicon;
+  padding-right: 10px;
 }
 .linkedin1 {
   grid-area: linkedin;
@@ -141,7 +142,38 @@ body {
 .listitem :hover {
     text-decoration: underline;
     text-decoration-color: #ffad6f;
+    color: #dfebed;
 }
+.listitemportfolio  span {
+  text-decoration: none;
+  color: #dfebed;
+  
+
+}
+.listitemportfolio a {
+  text-decoration: none;
+}
+
+
+
+.listitemportfolio :hover {
+text-decoration: underline;
+text-decoration-color: #ffad6f;
+color: #dfebed;
+}
+
+
+.listitemportfolio span  :active :after {
+text-decoration: none;
+text-decoration: underline;
+color: #dfebed;
+}
+
+
+
+
+
+
 
 @media all and (max-width: 600px) {
    .flexheader {
@@ -153,7 +185,7 @@ body {
         flex-direction: column;
           padding-left: 0px;
     }
-    .listitem {
+    .listitem, .listitemportfolio{
       padding-bottom: 25px;
      
    
@@ -177,6 +209,11 @@ body {
       padding-bottom: 20px;
    
     }
-    
-
+    .title h1 {
+      font-size: 24px;
+    }
+    .title h2 {
+      font-size: 18px;
+  
+    }
 }
