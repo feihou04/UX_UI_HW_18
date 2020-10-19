@@ -27,12 +27,33 @@ body {
   list-style: none;
   display: flex;
 }
-.listitem, .listitemportfolio {
+.listitem, .listitemportfolio, .listitemabout {
   padding-right: 80px;
   
   flex: auto;
   cursor: pointer;
   transition: text-decoration 1s ease;
+}
+.listitemportfolio  span, .listitemabout span {
+  text-decoration: none;
+  color: #dfebed;
+  
+
+}
+.listitemportfolio a, .listitemabout a {
+  text-decoration: none;
+}
+
+.listitemportfolio :hover, .listitemabout :hover, .listitem :hover {
+text-decoration: underline;
+text-decoration-color: #ffad6f;
+color: #dfebed;
+}
+
+.listitemportfolio span  :active :after. .listitemabout span :active :after {
+text-decoration: none;
+text-decoration: underline;
+color: #dfebed;
 }
 .flextitle {
   background-image: url(../images/headingbackground.png);
@@ -114,6 +135,12 @@ body {
   grid-area: linaddress;
   }
 
+.address :hover, .emailaddress :hover {
+  color: dodgerblue;
+  text-decoration-color: dodgerblue;
+  
+}
+
 .flexfooter {
   background-color: #19292d;
   padding: 20px 50px;
@@ -139,37 +166,6 @@ body {
 .socialmedia1 :hover, .socialmedia2 :hover {
     color: dodgerblue
 }
-.listitem :hover {
-    text-decoration: underline;
-    text-decoration-color: #ffad6f;
-    color: #dfebed;
-}
-.listitemportfolio  span {
-  text-decoration: none;
-  color: #dfebed;
-  
-
-}
-.listitemportfolio a {
-  text-decoration: none;
-}
-
-
-
-.listitemportfolio :hover {
-text-decoration: underline;
-text-decoration-color: #ffad6f;
-color: #dfebed;
-}
-
-
-.listitemportfolio span  :active :after {
-text-decoration: none;
-text-decoration: underline;
-color: #dfebed;
-}
-
-
 
 
 
@@ -180,12 +176,18 @@ color: #dfebed;
        flex-direction: column;
        
    }
+   #logo {
+     margin-bottom: 10px;
+   }
+   .logo p {
+     display: none;
+   }
     .button ul {
        
         flex-direction: column;
           padding-left: 0px;
     }
-    .listitem, .listitemportfolio{
+    .listitemabout, .listitemportfolio{
       padding-bottom: 25px;
      
    

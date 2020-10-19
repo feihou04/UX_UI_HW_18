@@ -24,13 +24,41 @@ body {
     list-style: none;
     display: flex;
   }
-  .listitem {
+  .listitem, .listitemabout, .listitemcontact {
     padding-right: 80px;
     
     flex: auto;
     cursor: pointer;
     transition: text-decoration 1s ease;
   }
+  .listitemcontact  span, .listitemabout span {
+    text-decoration: none;
+    color: #dfebed;
+    
+
+}
+.listitemcontact a, .listitemabout a {
+    text-decoration: none;
+}
+
+.listitem :hover {
+  text-decoration: underline;
+  text-decoration-color: #ffad6f;
+  color: #dfebed;
+}  
+
+.listitemcontact :hover, .listitemabout :hover {
+  text-decoration: underline;
+  text-decoration-color: #ffad6f;
+  color: #dfebed;
+}
+
+
+.listitemcontact span  :active :after, .listitemabout span :active :after {
+  text-decoration: none;
+  text-decoration: underline;
+  color: #dfebed;
+}
 
 .gridcontainer {
     display: grid;
@@ -54,8 +82,8 @@ body {
     color: #dfebed;
     justify-items: center;
     align-items: center;
-    padding: 40px 100px 90px 150px;
-    font-size: 1.15em;
+    padding: 40px 60px 90px 150px;
+    font-size: 1.2em;
    
       
 }
@@ -70,7 +98,7 @@ body {
     display: inline-block;
     cursor: pointer;
     border-radius: 10px;
-    font-size: 1.5em;
+    font-size: 1.6em;
 
 
     /*font-size: 1em;
@@ -128,13 +156,13 @@ body {
     grid-column-start: 1;
     margin-right: 120px;
     margin-left: 120px;
-    padding: 30px;
-
+    padding: 40px 40px 30px 40px;
     display: grid;
     grid-template-areas: " detail portfoliopic";
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-row-gap: 5%;  
+    grid-column-gap: 5%;
 }
 .portfoliopic img {
     width: 90%;
@@ -146,15 +174,15 @@ body {
     align-self: center;
     background-color: #dfebed;
     grid-column-start: 1;
-    padding: 30px;
+    padding:40px 40px 30px 40px;
     margin-right: 120px;
     margin-left: 120px;
     display: grid;
     grid-template-areas: " detail portfoliopic";
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-row-gap: 5%;  
-
+    grid-column-gap: 5%;
 }
 .portfolio3 {
     grid-area: portfolio3;
@@ -162,15 +190,16 @@ body {
     align-self: center;
     background-color: #ffd6ad;
     grid-column-start: 1; 
-    padding: 30px 30px 30px 40px;
+    padding:40px 40px 30px 40px;
     margin-right: 120px;
     margin-left: 120px;
    
     display: grid;
     grid-template-areas: " detail portfoliopic";
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-row-gap: 5%;  
+    grid-column-gap: 5%;
 }
 .portfolio4 {
     grid-area: portfolio4;
@@ -180,13 +209,14 @@ body {
     grid-column-start: 1;
     margin-right: 120px;
     margin-left: 120px;
-    padding: 30px;
+    padding: 40px 40px 30px 40px;
     display: grid;
     grid-template-areas: " detail portfoliopic";
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-row-gap: 5%;  
     position: relative;
+    grid-column-gap: 5%;
 }
 .overlay {
     position: absolute;
@@ -271,34 +301,7 @@ body {
       padding-right: 1em;
       transition: color 1s ease;
   }
-  .listitemcontact  span {
-      text-decoration: none;
-      color: #dfebed;
-      
 
-  }
-  .listitemcontact a {
-      text-decoration: none;
-  }
-
-  .listitem :hover {
-    text-decoration: underline;
-    text-decoration-color: #ffad6f;
-    color: #dfebed;
-}  
-  
-.listitemcontact :hover {
-    text-decoration: underline;
-    text-decoration-color: #ffad6f;
-    color: #dfebed;
-}
-
-
-  .listitemcontact span  :active :after {
-    text-decoration: none;
-    text-decoration: underline;
-    color: #dfebed;
-  }
   
   .socialmedia1 :hover, .socialmedia2 :hover {
       color: dodgerblue
@@ -311,12 +314,15 @@ body {
         flex-direction: column;
         
     }
+    #logo {
+        margin-bottom: 10px;
+    }
      .item ul {
         
          flex-direction: column;
            padding-left: 0px;
      }
-     .listitem {
+     .listitem, .listitemcontact, .listitemabout {
        padding-bottom: 25px;
       
     
@@ -399,7 +405,7 @@ body {
 
     margin-right: 10%;
     margin-left: 10%;
-    padding: 30px;
+    padding: 30px 30px 50px 30px;
 
     display: grid;
     grid-template-areas: "portfoliopic"
@@ -423,11 +429,11 @@ body {
     grid-row-start: 10;
     grid-row-end: 18;
     
-    padding: 30px;
+    padding: 30px 30px 50px 30px;
     margin-right: 10%;
     margin-left: 10%;
     display: grid;
-    grid-template-areas: " detail" "portfoliopic";
+    grid-template-areas: "portfoliopic" " detail" ;
     grid-template-columns: 100%;
     grid-template-rows: auto;
 
@@ -441,12 +447,12 @@ body {
     grid-column-start: 1; 
     grid-row-start: 19;
     grid-row-end: 25;
-    padding: 30px 30px 30px 40px;
+    padding:  30px 30px 50px 30px;
     margin-right: 10%;
     margin-left: 10%;
    
     display: grid;
-    grid-template-areas: " detail" "portfoliopic";
+    grid-template-areas:  "portfoliopic" " detail";
     grid-template-columns: 100%;
     grid-template-rows: auto;
     
@@ -461,13 +467,20 @@ body {
     grid-row-end: 30;
     margin-right: 10%;
     margin-left: 10%;
-    padding: 30px;
+    padding: 30px 30px 50px 30px;
     display: grid;
-    grid-template-areas: " detail" "portfoliopic";
+    grid-template-areas:  "portfoliopic" " detail";
     grid-template-columns: 100%;
     grid-template-rows: auto;
   
+  
 
+}
+.portfoliopic {
+    order: 1;
+}
+.detail {
+    order: 2;
 }
 .catergory {
     font-size: 0.7em;
@@ -476,5 +489,6 @@ body {
 .portfoliobutton {
  
     margin-bottom: 25px;
+    font-size: 12px;
  
  }

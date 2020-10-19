@@ -1,0 +1,226 @@
+body {
+    font-family: 'Source Serif Pro', serif;
+    
+}
+.flexheader {
+    display: flex;
+    background-color: #19292d;
+    color: #dfebed;
+    padding: 25px 25px 25px 50px;
+    
+    justify-content: space-between;
+  }
+  
+   
+  #logo {
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+  .logo p {
+    float: right;
+  }
+  
+  .item ul {
+    list-style: none;
+    display: flex;
+  }
+  .listitem, .listitemabout, .listitemcontact {
+    padding-right: 80px;
+    
+    flex: auto;
+    cursor: pointer;
+    transition: text-decoration 1s ease;
+  }
+  .listitemcontact  span, .listitem span {
+    text-decoration: none;
+    color: #dfebed;
+    
+
+}
+.listitemcontact a, .listitem a {
+    text-decoration: none;
+}
+
+
+.listitemcontact :hover, .listitem :hover, .listitemabout :hover{
+  text-decoration: underline;
+  text-decoration-color: #ffad6f;
+  color: #dfebed;
+}
+
+
+.listitemcontact span  :active :after, .listitem span :active :after {
+  text-decoration: none;
+  text-decoration: underline;
+  color: #dfebed;
+}
+
+.heroimg {
+    background-color: #19292d;
+    /*padding-left: 12%; */
+    padding-bottom: 40px;
+}
+.test{
+   text-align: center;
+
+}
+.herowordbackground {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #dfebed;
+    width: 55%;
+    height: 239px;
+    margin-left: -7px;
+    line-height: 239px;
+    text-align: center;
+
+}
+
+.heroword {
+    line-height: 1.25;
+    vertical-align: middle;
+    font-size: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.heroimg img {
+    border: 1px solid #dfebed;
+
+}
+.mystory {
+    margin-left: 12%;
+    margin-right: 12%;
+    font-size: 24px;
+}
+.mystorytitle {
+    color: #ffad6f;
+    font-weight: 700;
+}
+.mystory h3 {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 25px;
+    
+}
+.mystory p {
+    text-align: justify;
+}
+.skill {
+    background-color: #dfebed;
+    background-image: url(../images/skillimg41.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    font-size: 20px;
+  
+}
+.margin {
+    margin-left: 12%;
+    margin-right: 12%;   
+    padding-bottom: 20px;
+
+}
+.center {
+    text-align: center;
+    padding-top: 40px;
+     
+}
+
+.tool, .design, .other {
+    display: inline-block;
+    vertical-align: top;
+    width: 29%;
+    margin-block-start: -1em;
+
+   
+}
+ .other {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin-block-start: -1em;
+
+   
+}
+
+.skill ul {
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+
+.skill li {
+    padding: 0px;
+
+}
+.tool h3, .design h3, .other h3 {
+    text-align: left;
+    text-decoration: underline;
+}
+.education {
+    background-color: #f4e7d3;
+    background-image: url(../images/educationimage\ 42.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: 25px;
+    padding-top: 30px;
+    margin-bottom: 25px;
+    font-size: 20px;
+
+}
+.education1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin-right: 60px;
+
+   
+}
+ .designation {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin-right: 0px;
+ }
+ .flexfooter {
+    background-color: #19292d;
+    padding: 20px 50px;
+    color: #dfebed;
+    display: flex;
+  
+    justify-content: space-between;
+  }
+  .socialmedia {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .socialmedia1, .socialmedia2 {
+      cursor: pointer;
+      flex: auto;
+      padding-right: 1em;
+      transition: color 1s ease;
+  }
+
+  
+  .socialmedia1 :hover, .socialmedia2 :hover {
+      color: dodgerblue
+  }
+  
+ /* .socialmedia1 span :active :after, .socialmedia2 span :active :after {
+    color: dodgerblue
+}*/
+
+.imgbox {
+    display: inline-block;
+       border: 1px solid white;
+}
+.imgbox a :hover {
+    display: inline-block;
+    border: 2px solid #ffad6f;
+    border-radius: 50%;
+}
