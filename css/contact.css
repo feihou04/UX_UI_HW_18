@@ -211,11 +211,11 @@ color: #dfebed;
       padding-bottom: 20px;
    
     }
-    .title h1 {
-      font-size: 24px;
-    }
     .title h2 {
-      font-size: 18px;
+      font-size: 2em;
+    }
+    .title h3 {
+      font-size: 1.25em;
   
     }
 }
