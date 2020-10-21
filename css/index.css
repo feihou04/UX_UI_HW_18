@@ -74,6 +74,7 @@ body {
      grid-template-rows:  auto auto auto auto auto auto;
    
      grid-row-gap: 20px;
+     justify-content: center;
    
 }
 
@@ -83,9 +84,9 @@ body {
     color: #dfebed;
     justify-items: center;
 
-    padding: 40px 60px 90px 130px;
-    font-size: 24px;
-    text-align: left;
+    padding: 40px 40px 90px 130px;
+    font-size: 26px;
+    
    
       
 }
@@ -147,7 +148,7 @@ body {
    justify-self: center;
    align-self: center;
   /* background-color:#19292d;*/
-   margin-top: -145px;
+   margin-top: -175px;
     
 }
 .portfolio1 {
@@ -291,6 +292,7 @@ body {
     display: flex;
   
     justify-content: space-between;
+    margin-top: 2%;
   }
   .socialmedia {
     width: 100px;
