@@ -223,7 +223,7 @@ body {
   }
   
 
-  @media all and (max-width: 640px) {
+  @media all and (max-width: 600px) {
     .flexheader {
         flex-direction: column;
         
