@@ -160,13 +160,14 @@ body {
     grid-column-start: 1;
     margin-right: 120px;
     margin-left: 120px;
-    padding: 40px 80px 30px 40px;
+    padding: 40px 80px 30px 60px;
     display: grid;
     grid-template-areas: " detail portfoliopic";
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-row-gap: 5%;  
     grid-column-gap: 3%;
+    align-items: center;
 }
 .portfoliopic img {
     width: 100%;
@@ -178,7 +179,7 @@ body {
     align-self: center;
     background-color: #dfebed;
     grid-column-start: 1;
-    padding:40px 80px 30px 40px;
+    padding:40px 80px 30px 60px;
     margin-right: 120px;
     margin-left: 120px;
     display: grid;
@@ -187,6 +188,7 @@ body {
     grid-template-rows: auto;
     grid-row-gap: 5%;  
     grid-column-gap: 3%;
+    align-items: center;
 }
 .portfolio3 {
     grid-area: portfolio3;
@@ -194,7 +196,7 @@ body {
     align-self: center;
     background-color: #ffd6ad;
     grid-column-start: 1; 
-    padding:40px 80px 30px 40px;
+    padding:40px 80px 30px 60px;
     margin-right: 120px;
     margin-left: 120px;
    
@@ -204,6 +206,7 @@ body {
     grid-template-rows: auto;
     grid-row-gap: 5%;  
     grid-column-gap: 3%;
+    align-items: center;
 }
 .portfolio4 {
     grid-area: portfolio4;
@@ -213,7 +216,7 @@ body {
     grid-column-start: 1;
     margin-right: 120px;
     margin-left: 120px;
-    padding: 40px 80px 30px 40px;
+    padding: 40px 80px 30px 60px;
     display: grid;
     grid-template-areas: " detail portfoliopic";
     grid-template-columns: 50% 50%;
@@ -221,6 +224,7 @@ body {
     grid-row-gap: 5%;  
     position: relative;
     grid-column-gap: 3%;
+    align-items: center;
 }
 .overlay {
     position: absolute;
