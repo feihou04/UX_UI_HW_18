@@ -1,5 +1,6 @@
 body {
     font-family: "Source Serif Pro", serif;
+    font-size: 1.15em;
    
 }
 .flexheader {
@@ -81,9 +82,10 @@ body {
     background-color: #19292d;
     color: #dfebed;
     justify-items: center;
-    align-items: center;
-    padding: 40px 60px 90px 150px;
-    font-size: 1.2em;
+
+    padding: 40px 60px 90px 130px;
+    font-size: 22px;
+    text-align: left;
    
       
 }
@@ -98,7 +100,7 @@ body {
     display: inline-block;
     cursor: pointer;
     border-radius: 10px;
-    font-size: 1.6em;
+    font-size: 1.4em;
 
 
     /*font-size: 1em;
@@ -131,7 +133,8 @@ body {
     color: #dfebed;
     justify-items: end;
     padding-bottom: 50px;
-    padding-left: 100px;
+    padding-left: 60px;
+    padding-right: 100px;
 
 }
 .responsive {
@@ -144,7 +147,7 @@ body {
    justify-self: center;
    align-self: center;
   /* background-color:#19292d;*/
-   margin-top: -115px;
+   margin-top: -145px;
     
 }
 .portfolio1 {
@@ -280,6 +283,7 @@ body {
     font-size: 0.8em;
 }
 
+
 .flexfooter {
     background-color: #19292d;
     padding: 20px 50px;
@@ -312,6 +316,8 @@ body {
   @media all and (max-width: 600px) {
     .flexheader {
         flex-direction: column;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
         
     }
     #logo {
@@ -327,6 +333,7 @@ body {
       
     
      }
+
      .logo p {
          display: none;
      }
@@ -376,7 +383,7 @@ body {
 
 .feipic{
     margin-bottom: -70px;
-    padding:40px;
+    padding: 0px 40px 40px 40px;
 }
 .description {
     grid-area: main;
@@ -391,7 +398,7 @@ body {
       
 }
 .movingarrow {
-    padding: 40px;
+    padding: 65px;
 }
 .portfolio1 {
     grid-area: portfolio1;
