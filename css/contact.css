@@ -193,6 +193,7 @@ color: #dfebed;
      
    
     }
+
     .flexmain h3,
 .flexmain p {
   margin-left: 40px;
@@ -222,10 +223,10 @@ color: #dfebed;
    
     }
     .title h2 {
-      font-size: 2em;
+      font-size: 1.4em;
     }
     .title h3 {
-      font-size: 1.25em;
+      font-size: 1em;
   
     }
 }
